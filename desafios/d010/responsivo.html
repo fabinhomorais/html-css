@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 260px; /* O mínimo de largura que vai ocupar */
+            max-width: 800px; /* O máximo de largura que vai ocupar */
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /* A largura da foto vai ficar 100% */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tesntando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo explicabo eius soluta reiciendis neque eaque illum officiis sit magni maiores modi provident, accusantium debitis eligendi asperiores nemo architecto vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptatum nostrum velit amet. A, delectus blanditiis corrupti non et sequi nesciunt exercitationem? Harum iste minus reprehenderit, odio molestiae accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus ex tempora facere voluptatum quibusdam debitis quas aliquid similique quos deleniti esse sequi, odit voluptatem. Tempore unde quasi sed sint.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo explicabo eius soluta reiciendis neque eaque illum officiis sit magni maiores modi provident, accusantium debitis eligendi asperiores nemo architecto vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptatum nostrum velit amet. A, delectus blanditiis corrupti non et sequi nesciunt exercitationem? Harum iste minus reprehenderit, odio molestiae accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus ex tempora facere voluptatum quibusdam debitis quas aliquid similique quos deleniti esse sequi, odit voluptatem. Tempore unde quasi sed sint.</p>
+    </main>
+</body>
+</html>

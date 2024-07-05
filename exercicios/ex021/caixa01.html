@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level*/
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* 
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray; 
+            */
+
+            border: 10px solid darkslategrey; 
+            /* width style color */
+
+            /* 
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /*
+            padding: 10px 10px 10px 10px;
+            top right bottom left */
+
+            /* padding: 10px;
+            Quando é tudo igual, pode colocar uma só 
+            */
+
+            padding: 10px 20px;
+            /* 10 px para top e bottom / 20px para right e left */
+
+            /* 
+            
+            margin-top: 20px;     margem de cima
+            margin-right: 20px;   margem da direita 
+            margin-bottom: 40px;  margem de baixo
+            margin-left: 20px;    margem da esqueda 
+            
+            */
+
+            /* margin: 20px 20px 40px 20px; */
+            /* top right bottom left */
+
+            margin: 20px auto 40px auto;
+            /* 
+            para centralizar, coloquei esquerda e direita auto 
+            */
+
+            /* margin: auto; 
+
+            para deixar a caixa no meio  
+            */
+
+            /* outline fica dentro de margin depois de border */
+            
+            /* 
+            outline-width: 5px;     largura 
+            outline-style: dashed;  dashed = pontilhado 
+            outline-color: salmon;  a cor do outline 
+            */
+
+            outline: 5 px dashed salmon; 
+            /* width style color (outline é muito pouco usado)*/
+        }
+        
+        a { /* inline-level */
+
+            /* 
+            border-width: 10px;
+            border-style: solid;
+            border-color: red; 
+            */
+
+            border: 10px solid red;
+
+            /* 
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; 
+            */
+            
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
