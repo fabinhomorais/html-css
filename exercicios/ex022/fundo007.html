@@ -6,16 +6,29 @@
     <title>Alinhamento vertical</title>
     <style>
         #container {
-            height: 500px;
-            padding: 10px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /* Para ficar 100% do tamanho do container */
+
+            position: relative; /* Container sempre vai ser relativo */
+            height: 97vh; /* Altura do viewport */
             background-color: purple;
         }
 
         #conteudo {
-            height: 200px;
-            width: 400px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /* Para o background ficar 100% do tamanho */
+
+            position: absolute; /* Conteudo sempre vai ser absoluto, quando ser coloca o posicionamento absoluto, libera para colocar duas propriedades "LEFT" "TOP" */
+            height: 200px; /* Altura */
+            width: 400px; /* Largura */
             background-color: yellow;
-            margin: auto;
+            
+            left: 50%;
+            top: 50%;
+            /* Quando coloca 50% e 50% ele realmente fica no centro, porém ele leva como referencia LEFT TOP do conteudo, com isso o LEFT TOP fica no centro do conteudo */
+
+            transform: translate(-50%, -50%); /* com essa configuração de translate que dizer que vou mexer no conteudo para esquerda, direita, para cima ou para baixo. Na configuração que coloquei (-50%, - 50%) ela foi para esquerda e para cima, ou seja, quando coloca o primeiro negativo ele vai para esquerda e quando coloca positivo ele vai para direita / já no segundo quando coloca negativo ele vai para cima e quando coloca positivo vai para baixo. */
+
         }
     </style>
 </head>
