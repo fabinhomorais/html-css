@@ -16,7 +16,7 @@
     font-size: 1em;
 }
 
-body {
+html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte-padrao);
@@ -28,77 +28,49 @@ header {
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     padding-top: 50px;
-    font-variant: small-caps;
+    /* text-transform: uppercase; Esse ajuste deixa todas as letras maiúscula */
+    font-variant: small-caps; /* Deixa todas as letras maiusculas porém a primeira fica maior */
     font-family: var(--fonte-destaque);
     font-size: 10vw;
 }
 
-header p {
+header > p {
     padding-bottom: 50px;
 }
 
-header a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte-verso);
-    font-size: 3.5vw;
+    line-height: 2em;
 }
 
-section p {
-    padding: 5px;
-    padding-bottom: 2em;
+section.normal {
+    background-color: white;
+    color: black;
 }
 
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section#img1 {
-    background: url(../imagens/background001.jpg) fixed center center/cover;
-}
-
-section#img1 > p {
-    height: 300px;
-    width: 400px;
-    background-color: rgba(253, 253, 250, 0.129);
-    
-}
-
-section#img2{
-    background: url(../imagens/background002.jpg) fixed center center/cover;
 }
 
 section.imagem > p {
-    display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;    
-}
-
-section#img2 > p {
-    height: 300px;
     width: 400px;
-    background-color: rgba(253, 253, 250, 0.129);
+    background-color: rgba(0, 0, 0, 0.253);
 }
-
 
 footer {
     background-color: black;
@@ -106,12 +78,6 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-}
-
-footer a {
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 footer a:hover {
