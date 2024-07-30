@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, voluptatibus suscipit earum nam quo illo harum velit, numquam quia sunt adipisci quam itaque aliquam eos recusandae. Nam, velit eaque? Dicta.
+    Odit inventore nisi quidem sunt fuga sint vero voluptatibus placeat cum, rerum asperiores alias atque accusantium eum facere aliquid dolore ipsa fugiat magni ducimus quam ipsam corrupti? Nesciunt, obcaecati mollitia!
+    Debitis reprehenderit unde sed atque placeat ipsa alias inventore, recusandae dolorum quidem ex, fuga totam, temporibus magni magnam quis facere esse voluptates ipsum accusantium nulla possimus veniam corrupti incidunt? Accusantium.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt dolore aspernatur modi dolorem porro expedita explicabo! Repellendus blanditiis eos sapiente cumque a possimus delectus, minus soluta nostrum excepturi suscipit.</p><img src='imagens/cursoemvideo.png'>">
+        <p>Infelizmte seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero, temporibus vel dolorum quidem ullam quis ipsa voluptates, nostrum eaque dolore quae recusandae possimus beatae ipsum similique ut dolor totam.
+    Asperiores tempore quo mollitia. Esse soluta dignissimos molestiae atque iure iste? Reprehenderit laudantium alias similique accusantium fuga blanditiis unde suscipit! Beatae accusantium necessitatibus accusamus maxime aliquid aspernatur iusto optio pariatur?</p>
+</body>
+</html>
