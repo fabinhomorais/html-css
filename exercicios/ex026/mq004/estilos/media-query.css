@@ -17,7 +17,7 @@ grandes telas: acima de 1281px
     }
 
     body {
-        background-image: url(../imagens/back-print.jpg); /* Não funciona para imprimir */
+        background-image: url(../imagens/back-print.jpg); /* Background-image não funciona para imprimir */
     }
     main {
         width: 90vw;
